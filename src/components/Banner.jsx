@@ -9,14 +9,7 @@ import { Fade } from "react-awesome-reveal";
 const Banner = () => {
     const { theme } = useContext(ThemeContext);
     const bannerBgColor = theme === 'light' ? 'bg-[#28c1f0b7]' : 'bg-[#0a2b59]';
-    const textColor = theme === 'dark' ? '#ffffff' : '#000000';
-
-
-  const textStyle = {
-    fontSize: '1.5em',
-    display: 'inline-block',
-    color: textColor
-  };
+    
   return (
 
     <div>
@@ -49,7 +42,10 @@ const Banner = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={textStyle}
+      style={{
+        fontSize: "1em",
+        color: "white"
+      }}
       repeat={Infinity}
     />
     
