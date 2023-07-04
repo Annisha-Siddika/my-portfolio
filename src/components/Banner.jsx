@@ -9,6 +9,14 @@ import { Fade } from "react-awesome-reveal";
 const Banner = () => {
     const { theme } = useContext(ThemeContext);
     const bannerBgColor = theme === 'light' ? 'bg-[#28c1f0b7]' : 'bg-[#0a2b59]';
+    const textColor = theme === 'dark' ? '#ffffff' : '#000000';
+
+
+  const textStyle = {
+    fontSize: '1.5em',
+    display: 'inline-block',
+    color: textColor
+  };
   return (
 
     <div>
@@ -29,24 +37,24 @@ const Banner = () => {
 </span> 
 </h2>
  </Fade>
-   <div className='inline text-3xl pl-12'> I am </div> 
+   <div className='inline text-xl md:text-3xl pl-12'> I am </div> 
          <TypeAnimation
       sequence={[
         'Frontend Developer',
         2000, 
-        'MERN Stack Web Developer',
+        'MERN Developer',
         2000,
         'Coding enthusiast',
         2000
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '2em', display: 'inline-block', color: "blue" }}
+      style={textStyle}
       repeat={Infinity}
     />
     
  </div>
-    <div className='w-1/2 mx-auto'>
+    <div className='md:w-1/2 mx-auto'>
     <Fade direction='right'>
     <img src="https://i.ibb.co/pXt72Cc/hi.gif" alt="" className='rounded-full p-8 h-96 w-96' />
     </Fade>

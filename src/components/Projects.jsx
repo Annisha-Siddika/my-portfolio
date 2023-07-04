@@ -1,6 +1,9 @@
 import { Fade } from "react-awesome-reveal";
 import Container from "../container/Container";
 import { FaArrowAltCircleRight } from 'react-icons/fa';
+import img1 from "../assets/Images/project1.jpg"
+import img2 from "../assets/Images/project2.jpg"
+import img3 from "../assets/Images/project3.jpg"
 const Projects = () => {
   
 
@@ -12,7 +15,7 @@ const Projects = () => {
         <Fade direction="left">
         <div className="w-2/3 md:w-full mx-auto p-2 bg-cyan-600 hover:bg-cyan-700 rounded-lg border-2">
         <div className="image-frame rounded-lg shadow-2xl">
-      <img src="https://i.ibb.co/mD1zZ6P/project1.jpg" alt="img"/>
+      <img src={img1} alt="img"/>
     </div>
           <div className="py-2 text-white">
             <h3 className="text-lg font-bold mb-2 ">Artistry Camp</h3>
@@ -34,7 +37,7 @@ const Projects = () => {
         <Fade>
         <div className="w-2/3 md:w-full mx-auto p-2 bg-cyan-600 hover:bg-cyan-700 rounded-lg border-2">
         <div className="image-frame rounded-lg shadow-2xl">
-      <img src="https://i.ibb.co/NpjFTyZ/project2.jpg" alt="img"/>
+      <img src={img2} alt="img"/>
     </div>
           <div className="py-2 text-white">
             <h3 className="text-lg font-bold mb-2 ">Lego Land</h3>
@@ -56,7 +59,7 @@ const Projects = () => {
         <Fade direction="right">
         <div className="w-2/3 md:w-full mx-auto p-2 bg-cyan-600 hover:bg-cyan-700 rounded-lg border-2">
         <div className="image-frame rounded-lg shadow-2xl">
-      <img src="https://i.ibb.co/ypLD9mm/project3.jpg" alt="img"/>
+      <img src={img3} alt="img"/>
     </div>
           <div className="py-2 text-white">
             <h3 className="text-lg font-bold mb-2 ">Flavor Fusion</h3>

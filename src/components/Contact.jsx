@@ -28,7 +28,7 @@ const Contact = () => {
       <h4 className="text-lg mb-8 text-center">Get in touch with me for any inquiries</h4>
 
       <div className="md:flex justify-between items-center pt-12">
-        <div className="w-1/2 mx-auto">
+        <div className="md:w-1/2 mx-auto">
           <Fade direction='left'>
           <div className="mb-4 flex items-center">
             <FaMapMarkerAlt className="mr-2" />
@@ -54,7 +54,7 @@ const Contact = () => {
         </div>
 
        
-        <div className="w-1/2 mx-auto pt-8 md:pt-0">
+        <div className="md:w-1/2 mx-auto pt-8 md:pt-0">
          
           <form ref={form} onSubmit={sendEmail}>
             <input className="w-full mb-4 px-4 py-2 border border-gray-300 rounded text-blue-900" type="text" name="from_name" placeholder="Your Name" required />
